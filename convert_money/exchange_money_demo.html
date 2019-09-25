@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Change Money</title>
+</head>
+<body>
+    <form>
+        <h2> Amount</h2>
+        <input  id="idAmount"   type="number"/>
+        <h2>From Currency</h2>
+        <select name="From_Currency">
+            <option id="idVND" value="VND">VND</option>
+            <option id="idYen" value="YEN">YEN</option>
+        </select>
+        <h2> To Currency</h2>
+        <select id="idFromCurrency" name="To_Currency">
+            <option id="idUSD" value="USD">USD</option>
+        </select>
+        <button type="button" onclick="change_money()">Convert</button>
+        <script src="exchange_money.js"></script>
+        <h3><div id="idResult"></div></h3>
+    </form>
+</body>
+</html>
