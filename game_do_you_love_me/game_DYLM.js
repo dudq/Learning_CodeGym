@@ -9,5 +9,4 @@ function no() {
     let no = document.getElementById('no');
     no.style.left = left + 'px';
     no.style.top = top + 'px';
-
 }
