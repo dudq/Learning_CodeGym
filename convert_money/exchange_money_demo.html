@@ -5,9 +5,10 @@
     <title> Change Money</title>
 </head>
 <body>
+<div class="exchange_money">
     <form>
         <h2> Amount</h2>
-        <input  id="idAmount"  type="number"/>
+        <input id="idAmount" type="number"/>
         <h2>From Currency</h2>
         <select name="From_Currency">
             <option id="idVND" value="VND">VND</option>
@@ -19,7 +20,10 @@
         </select>
         <button type="button" onclick="change_money()">Convert</button>
         <script src="exchange_money.js"></script>
-        <h3><div id="idResult"></div></h3>
+        <h3>
+            <div id="idResult"></div>
+        </h3>
     </form>
+</div>
 </body>
 </html>

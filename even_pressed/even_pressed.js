@@ -1,18 +1,21 @@
-
-var element = document.getElementById("nobita");
+let element = document.getElementById("nobita");
 
 function upArrowPressed() {
     element.style.top = parseInt(element.style.top) - 5 + 'px';
 }
+
 function downArrowPressed() {
     element.style.top = parseInt(element.style.top) + 5 + 'px';
 }
+
 function leftArrowPressed() {
     element.style.left = parseInt(element.style.left) - 5 + 'px';
 }
+
 function rightArrowPressed() {
     element.style.left = parseInt(element.style.left) + 5 + 'px';
 }
+
 function moveSelection(evt) {
     switch (evt.keyCode) {
         case 37:
@@ -29,6 +32,7 @@ function moveSelection(evt) {
             break;
     }
 }
+
 function docReady() {
-    window.addEventListener('keydown',moveSelection);
+    window.addEventListener('keydown', moveSelection);
 }

@@ -1,19 +1,21 @@
 let display = document.getElementById('idDisplay');
 let isFinish = false;
 let isOperator = false;
+
 function addOperator(value) {
-    if (isOperator){
+    if (isOperator) {
         display.innerHTML += value;
         isOperator = false;
     }
 }
+
 function addNumber(value) {
-    if (isFinish){
-        display.innerHTML ='';
+    if (isFinish) {
+        display.innerHTML = '';
         display.innerHTML += value;
         isFinish = false;
-        isOperator= false;
-    }else {
+        isOperator = false;
+    } else {
         display.innerHTML += value;
         isOperator = true;
     }

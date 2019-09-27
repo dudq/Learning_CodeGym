@@ -1,5 +1,5 @@
 function countDays() {
-    let month =parseInt(document.getElementById("idMonth").value);
+    let month = parseInt(document.getElementById("idMonth").value);
     let daysOfMonth = document.getElementById("idDaysOfMonth");
     switch (month) {
         case 1:
