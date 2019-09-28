@@ -5,7 +5,13 @@ let isOperator = false;
 function addOperator(value) {
     if (isOperator) {
         display.innerHTML += value;
+        isFinish = false;
         isOperator = false;
+    } else {
+        let lastCharacter  = display.innerHTML.charAt(display.innerHTML.length -1);
+        display.innerHTML = display.innerHTML.replace(lastCharacter,value);
+        isOperator = false;
+        isFinish = false;
     }
 }
 
@@ -21,7 +27,7 @@ function addNumber(value) {
     }
 }
 
-function caculator() {
+function calculator() {
     result = eval(display.innerHTML);
     display.innerHTML = result;
     isFinish = true;
@@ -30,7 +36,6 @@ function caculator() {
 function clean() {
     display.innerHTML = '';
 }
-
 document.getElementById('1').addEventListener('click', function () {
     addNumber('1');
 });
@@ -67,7 +72,7 @@ document.getElementById('addition').addEventListener('click', function () {
 document.getElementById('subtraction').addEventListener('click', function () {
     addOperator('-');
 });
-document.getElementById('mutiplication').addEventListener('click', function () {
+document.getElementById('multiplication').addEventListener('click', function () {
     addOperator('*');
 });
 document.getElementById('division').addEventListener('click', function () {
@@ -75,7 +80,4 @@ document.getElementById('division').addEventListener('click', function () {
 });
 document.getElementById('c').addEventListener('click', function () {
     clean()
-});
-document.getElementById('=').addEventListener('click', function () {
-    caculator();
 });
