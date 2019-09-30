@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let num = parseInt(prompt("Enter your number"));
+    let sout ='Prime number: ';
+    let count =0;
+    for (i=2; i<=num;i++) {
+        let isprime = true
+        for (j = 2; j <i; j++) {
+            if (i % j == 0) {
+                isprime = false;
+            }
+        }
+        if (isprime){
+            count +=1;
+            sout = sout +i +' ';
+        }
+    }
+    document.write(sout + '<br> Total: ' +count + ' prime number');
+</script>
+</body>
+</html>
