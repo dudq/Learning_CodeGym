@@ -2,9 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Faking Text</title>
 </head>
 <body>
-$END$
+<h3>Type anything slowly</h3>
+<textarea id = "input" rows="10" cols="30" onkeyup="keyup()"></textarea>
+<script>
+    let str = 'Toi la thang ngoc !';
+    let result =[];
+    let count =0;
+    function keyup() {
+        for (;count<str.length;){
+            result.push(str[count]);
+            document.getElementById('input').value = result.join('');
+            count ++;
+            if (count == str.length){
+                count =0 ;
+                result =[];
+            }
+            break;
+        }
+    }
+</script>
 </body>
 </html>
