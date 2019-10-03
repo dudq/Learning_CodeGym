@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p id="idPageInput"> Meters: <input id="input" placeholder="meters" oninput="meterToFoot(this.value)">
+</p>
+<p id="idPageOutput">
+    Foot: <span id="output"></span>
+</p>
+<p>
+    <button id="change" onclick="changeMethod()">Change</button>
+</p>
+<script>
+    function meterToFoot(valNum) {
+        valNum = parseInt(valNum);
+        document.getElementById('output').innerHTML = 3.279 * valNum;
+    }
+
+    function footToMeter(valNum) {
+        valNum = parseInt(valNum);
+        document.getElementById('output').innerHTML = 0.305 * valNum;
+    }
+
+    let checked = true;
+
+    function changeMethod() {
+        // document.getElementById('input').oninput = 'footToMeter(this.value)';
+        if (checked) {
+            document.getElementById('idPageInput').innerHTML = 'Foot: <input id="input" placeholder="Foot" oninput="footToMeter(this.value)">';
+            document.getElementById('idPageOutput').innerHTML = 'Meters: <span id="output"></span>';
+            checked = false;
+        } else {
+            document.getElementById('idPageInput').innerHTML = 'Meters <input id="input" placeholder="Meters" oninput="meterToFoot(this.value)">';
+            document.getElementById('idPageOutput').innerHTML = 'Foot: <span id="output"></span>';
+            checked = true;
+        }
+    }
+</script>
+</body>
+</html>
