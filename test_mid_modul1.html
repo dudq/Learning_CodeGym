@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Mid Modul 1</title>
+</head>
+<body>
+<script>
+    /*let diemToan =parseInt(prompt(' Nhap diem toan:'));
+    diemToan = checkDiem(diemToan);
+    let diemVan =parseInt(prompt('Nhap diem van:'));
+    diemVan = checkDiem(diemVan);
+    let diemAnh =parseInt(prompt('Nhap diem tieng anh:'));
+    diemAnh = checkDiem(diemAnh);
+    function checkDiem(diem) {
+        while (diem<0 || diem>10){
+            diem = prompt('Nhap lai diem:');
+        }
+        return diem;
+    }
+    let diemTrungBinh = (diemToan*2+diemVan+diemAnh*2)/5;
+    alert(diemTrungBinh);
+    if (diemTrungBinh<5){
+        alert('Khong Dat');
+    } else if (diemTrungBinh<7.5){
+        alert('Dat');
+    }else if (diemTrungBinh<8.5){
+        alert('Kha');
+    }else {
+        alert('Tot')
+    }*/
+    let num = prompt('Nhap so:')
+    let isPrime = false;
+    function checkPrime(num) {
+        if (num<2) return false;
+        for (let i=2; i<=(num/2);i++){
+            if (num % i== 0){
+                return false;
+            }
+        }
+        return true;
+    }
+    if (checkPrime(num)){
+        alert(num + ' la so nguyen to');
+    } else alert(num + ' ko la so nguyen to');
+</script>
+</body>
+</html>
