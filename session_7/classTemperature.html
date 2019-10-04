@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature</title>
+</head>
+<body>
+<script>
+    let Temperature = function (temp) {
+        this.temp = temp;
+        this.getTemp = function () {
+            return this.temp;
+        }
+        this.setTemp = function (temp) {
+            this.temp = temp;
+        }
+        this.convertToFahrenheit = function () {
+            return temp * 1.8 + 32;
+        }
+        this.convertToKenvin = function () {
+            return temp + 273.15
+        }
+    }
+    let temperature = new Temperature(30);
+    temperature.setTemp(20);
+    let temp = temperature.getTemp();
+    let f = temperature.convertToFahrenheit();
+    let k = temperature.convertToKenvin();
+    alert('Do C '+temp+ ' DoF '+f+' DoK '+k);
+</script>
+</body>
+</html>
