@@ -18,7 +18,7 @@ for (let i=1; i<=num;i++){
 }
 document.write(total);*/
 // Bai 3
-/*for ( let i=1; i<6;i++){
+for ( let i=1; i<6;i++){
     for (let j =1; j<6;j++){
         if (i>=j){
             document.write('*');
@@ -59,7 +59,7 @@ for ( let i=1; i<6;i++){
     }
 }
 sout2 = sout2 +'</table>';
-document.write(sout2);*/
+document.write(sout2);
 //Bai 4
 /*
 let sout = '<table border="0" width="50" cellspacing="0" cellpadding="0">';
@@ -89,6 +89,7 @@ for ( let i=1; i<=thoigianVay; i++){
 }
 alert('So tien phai tra: ' +  tienVay);*/
 //Bai 6
+/*
 sout6 ='<table border="0" width="50" cellpadding="0" cellspacing="0">';
 for (let i =1; i<5;i++){
     sout6 = sout6 + '<tr>';
@@ -120,4 +121,4 @@ for (let i =1; i<5;i++){
     }
 }
 sout6 = sout6 + '</table>';
-document.write(sout6);
+document.write(sout6);*/

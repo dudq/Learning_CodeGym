@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let input = prompt("enter string");
+
+    function check(str) {
+        if (str.length > 1) {
+            if (str[0] == str[str.length - 1]) {
+                str.shift();
+                str.pop();
+                check(str);
+            } else return false;
+        }
+        return  true;
+    }
+
+    if (check(input)) {
+        alert('Correct');
+    } else alert('Wrong');
+</script>
+</body>
+</html>

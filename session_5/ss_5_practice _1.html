@@ -2,9 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+
+    // let arr = [2, 3, 4, 12, 3, 4, 5, 112, 123, 3];
+    // let count = 0;
+    //Bai 1
+    /*for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+            document.write(arr[i] + ' <br>');
+            count++;
+        }
+    }
+    document.write('Co '+ count +' so >=10<br>');*/
+    //Bai 2
+    /*let max = arr[0];
+    let index =0;
+    let sum = 0;
+    for (let i=1;i<arr.length;i++){
+        if (max<arr[i]){
+            max =arr[i];
+            index = i
+        }
+        sum += arr[i];
+    }
+    document.write('max=: '+max+ ' position '+ index+'<br>');*/
+    //Bai 3
+    // document.write('advance= '+sum+'<br>' );
+    //Bai 4
+    /*let result =[];
+    let first = 0;
+    let last = arr.length-1;
+    while (first<last) {
+        let temp = arr[first];
+        arr[first]= arr[last];
+        arr[last] = temp;
+
+        first ++;
+        last --
+    }
+    document.write(arr);*/
+    //Bai 5
+    /*let str = '12-3-41-4-1-3-4-6-9';
+    let count = 0;
+    for (let i=0;i<str.length;i++){
+        if (str[i]== '-'){
+            count++;
+        }
+    }
+    document.write(count);*/
+
+    let arr = [2, 3, 4, 6, 1, 98, 5, 13, 224, 45];
+    //let num = prompt('Enter your number');
+    //Bai 6
+    /*for (let i =0; i<arr.length;i++){
+        if (num == arr[i]){
+            alert(num+' is in the array');
+            break;
+        } else if (i== (arr.length-1)){
+            alert(num + ' is not in array');
+        }
+    }*/
+    //Bai 7
+    /*for (let i=0; i<arr.length; i++){
+        if (num == arr[i]){
+            for (;i<arr.length;i++){
+                arr[i] = arr[i+1];
+                if ( i == (arr.length -1)){
+                    arr.pop();
+                    document.write(arr);
+                    break;
+                }
+            }
+        }
+    }*/
+    //Bai 8
+    let arr1 = [666, 777, 555, 4, 333, 222, 111]
+    let arr2 = [];
+    let isDuplicate =false;
+    /*for (let i = 0; i < arr.length; i++) {
+        arr2.push(arr[i]);
+    }*/
+    for (let i =0; i<arr.length;i++){
+        for (let j=0; j<arr1.length; j++){
+            if (arr[i] == arr1[j]){
+                isDuplicate = true;
+                break;
+            }
+        }
+        if (isDuplicate){
+            isDuplicate =false;
+        } else {
+            arr1.push(arr[i]);
+        }
+    }
+    document.write(arr1);
+
+</script>
 </body>
 </html>

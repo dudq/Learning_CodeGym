@@ -2,9 +2,63 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    // let arr = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
+    /*for (let i = 0; i < arr.length; i++) {
+        document.write(" row" + i+'<br>');
+        for (let j = 0; j < arr[i].length; j++) {
+            document.write(j+'<br>');
+        }
+    }*/
+    //Bai 2
+    let arr = ['c', 's', 'c', '1', '6', '2'];
+    /*for (let i= (arr.length -1); i>-1;i--){
+        document.write(arr[i]);
+    }*/
+    //Bai 3
+    let count = 0;
+    /*for (let i=0; i<arr.length;i++){
+       if(!isNaN(arr[i])){
+           count++;
+       }
+    }
+    document.write(count);*/
+    //Bai 4
+    /*let str = 'a2+b3-C4^r2';
+    for (let i =0;i<str.length;i++){
+        let isCharacter = str.charCodeAt(i);
+        if ((isCharacter>= 65 && isCharacter<=90) ||(isCharacter>=97 && isCharacter<=122)){
+            count++;
+            document.write(str[i]);
+        }
+    }
+    document.write(count);*/
+    //Bai 5
+    /*let str1 = 'qwer';
+    let str2 = 'qwlr';
+    if (str1.length == str2.length) {
+        for (let i = 0; i < str1.length; i++) {
+            if (str1[i] !== str2[i]) {
+                document.write('deffirence');
+                break;
+            } else if (i == (str1.length - 1)) {
+                document.write('the samle');
+            }
+        }
+    } else {
+        document.write('deffirence');
+    }*/
+    //Bai 6
+    let str = ['a','2','+','b','3','-','C','4','^','r','2'];
+    for( let i=0;i<str.length;i++){
+        if (str[i] === '-'){
+            str[i] ='_'
+        }
+    }
+    document.write(str.join(''));
+</script>
 </body>
 </html>
