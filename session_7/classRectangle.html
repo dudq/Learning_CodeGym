@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200px" height="150px" style="border: 1px solid #d3d3d3;"></canvas>
+<script>
+    let Rectangle = function (width, height) {
+        this.width = width;
+        this.height = height;
+        this.getWidth = function () {
+            return this.width;
+        }
+        this.getHeight = function () {
+            return this.height;
+        }
+        this.setWidth = function (width) {
+            this.width = width;
+        }
+        this.setHeight = function (height) {
+            this.height = height;
+        }
+        this.perimeter = function () {
+            return this.width + this.height;
+        }
+        this.area = function () {
+            return this.width*this.height;
+        }
+        this.creat = function () {
+            let ctx = document.getElementById('myCanvas').getContext('2d');
+            ctx.beginPath();
+            ctx.rect(20,20,this.width,this.height);
+            ctx.stroke();
+        }
+    }
+    let myRectangle = new Rectangle(50,30);
+    myRectangle.setWidth(60);
+    myRectangle.setHeight(40);
+    let width =  myRectangle.getWidth();
+    let height = myRectangle.getHeight();
+    let perimeter = myRectangle.perimeter();
+    let area = myRectangle.area();
+    alert('width: '+width+' '+'height: '+height+' perimeter: '+perimeter+' area: '+area);
+    myRectangle.creat();
+</script>
+</body>
+</html>
