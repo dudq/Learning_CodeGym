@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clas Mobile</title>
+</head>
+<body>
+<script>
+    let Mobile = function (name, battery, messageDraft, messageInbox, messageSend, status) {
+        this.name = name;
+        this.battery = battery;
+        this.messageDraft = messageDraft;
+        this.messageInbox = messageInbox;
+        this.messageSend = messageSend;
+        this.status = status;
+        this.setName = function (newName) {
+            this.name = newName;
+        }
+        this.getName = function () {
+            return this.name;
+        }
+        this.setBattery = function (newBattery) {
+            if (newBattery > 100) {
+                this.battery = 100;
+                alert('The battery is full');
+            }else if (newBattery<0){
+                alert('The battery is too low. The phone will turn off');
+                this.status =false;
+                this.battery =0;
+            }else this.battery = newBattery;
+        }
+        this.getBattery = function () {
+            if (this.status)
+            return this.battery;
+        }
+        //soan tin nhan
+        this.setMessageDraft = function (newMessageDraft) {
+            if (this.status)
+            this.messageDraft = newMessageDraft;
+        }
+        this.getMessageDraft = function () {
+            if(this.status)
+            return this.messageDraft;
+        }
+        //nhan tin nhan
+        this.setMessageInbox = function (newMessageInbox) {
+            if(this.status)
+            this.messageInbox = newMessageInbox;
+        }
+        //xem tin nhan hop thu den
+        this.getMessageInbox = function () {
+            if (this.status)
+            return this.messageInbox;
+        }
+        //gui tin nhan
+        this.setMessageSend = function (mobile) {
+            if (this.status) {
+                let a = messageDraft
+                this.messageSend = this.messageDraft;
+                mobile.setMessageInbox(this.messageDraft);
+                this.messageDraft = '';
+
+            }
+        }
+        //xin tin da gui
+        this.getMessageSend = function () {
+            if (this.status)
+            return this.messageSend
+        }
+        this.setStatus = function (newStatus) {
+            if (this.status)
+            this.status = newStatus;
+        }
+        this.getStatus = function () {
+            if (this.status)
+            return this.status;
+        }
+        this.charging = function () {
+            this.setBattery(this.battery+1);
+        }
+        this.use = function () {
+            this.setBattery(this.battery -1);
+        }
+        this.turnOn = function () {
+            if (this.status) {
+                alert('The phone already turn on');
+            } else this.status = true;
+        }
+        this.turnOff = function () {
+            if (this.status) {
+                this.status = false;
+                alert('The phone is turn off');
+            }
+        }
+        this.totring = function () {
+            str = this.name + '<br>'+this.battery+'<br>'+this.messageDraft+'<br>'+this.messageInbox+'<br>'+this.messageSend
+            +'<br>'+this.status+'<br>';
+            document.write(str);
+        }
+    }
+    let nokia = new Mobile('Nokia',50,'','','',true);
+    let iphone = new Mobile('Iphone',-1,'','','',true);
+    //nokia.totring();
+    nokia.setName('Oppo<br>');
+    let name = nokia.getName(); document.write(name);
+    nokia.setBattery(10);
+    let battery = nokia.getBattery(); document.write(battery)
+    nokia.setMessageDraft('<br>meo co gi <br>');
+    let draft = nokia.getMessageDraft(); document.write(draft);
+    nokia.setMessageInbox('Co 1 thu<br>');
+    let inbox =nokia.getMessageInbox(); document.write(inbox);
+    nokia.setMessageSend(iphone)
+    let send = nokia.getMessageSend(); document.write(send);
+     let inboxIp ='inbox iphone: '+iphone.getMessageInbox(); document.write(inboxIp);
+    // nokia.setStatus(true);
+    // let status = nokia.getStatus(); document.write(status);
+</script>
+</body>
+</html>
