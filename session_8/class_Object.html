@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Move Object</title>
+</head>
+<body onkeydown="image.move(event)">
+<div id='game'></div>
+<script>
+    let Object = function (xPosition, yPosition, src) {
+        this.xPosition = xPosition;
+        this.yPosition = yPosition;
+        this.width = 36;
+        this.height = 20;
+        this.src = src;
+        this.speed = 20;
+        this.display = function () {
+            document.getElementById('game').innerHTML = this.getObject();
+        };
+        this.getObject = function () {
+            if (this.xPosition < this.width) {
+                this.xPosition = window.innerWidth - this.width;
+            }
+            if (this.xPosition > window.innerWidth - this.width + 1) {
+                this.xPosition = this.width;
+            }
+            if (this.yPosition < this.height) {
+                this.yPosition = window.innerHeight-this.height ;
+            }
+            if (this.yPosition > window.innerHeight - this.height+1) {
+                this.yPosition = this.height;
+            }
+            return '<img src="' + this.src + '" style="position: absolute; left:' + this.xPosition + 'px; top:' + this.yPosition + 'px" >'
+        };
+        this.moveLeft = function () {
+            this.xPosition -= this.speed;
+        };
+        this.moveUp = function () {
+            this.yPosition -= this.speed;
+        };
+        this.moveRight = function () {
+            this.xPosition += this.speed;
+        };
+        this.moveDown = function () {
+            this.yPosition += this.speed;
+        };
+        this.changeImage = function () {
+            this.src = "images/left.png";
+        };
+        this.move = function (event) {
+            switch (event.which) {
+                case 39:
+                    this.moveRight();
+                    this.display();
+                    break;
+                case 40:
+                    this.moveDown();
+                    this.display();
+                    break;
+                case 37:
+                    this.moveLeft();
+                    this.display();
+                    break;
+                case 38:
+                    this.moveUp();
+                    this.display();
+                    break;
+            }
+        }
+    };
+    let image = new Object(50, 50, "images/right.png");
+    //let a = image.getObject();
+    // document.getElementById('game').innerHTML = image.getObject();
+    function start() {
+    if (image.xPosition < window.innerWidth){
+        image.moveRight();
+        image.display();
+    } else image.xPosition =0;
+    setTimeout(start,300);
+    }
+    start();
+</script>
+</body>
+</html>

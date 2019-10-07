@@ -104,8 +104,10 @@
     nokia.setName('Oppo<br>');
     let name = nokia.getName(); document.write(name);
     nokia.setBattery(10);
-    let battery = nokia.getBattery(); document.write(battery)
-    nokia.setMessageDraft('<br>meo co gi <br>');
+    let battery = nokia.getBattery(); document.write(battery);
+    let message = prompt('co gi ko');
+    nokia.setMessageDraft(message+'<br>');
+    // nokia.setMessageDraft(message+'<br>');
     let draft = nokia.getMessageDraft(); document.write(draft);
     nokia.setMessageInbox('Co 1 thu<br>');
     let inbox =nokia.getMessageInbox(); document.write(inbox);
