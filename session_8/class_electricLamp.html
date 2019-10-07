@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Electric Lamp</title>
+</head>
+<body>
+<script>
+    let SwitchButton =function () {
+        this.status =false;
+        this.getStatus = function () {
+            return this.status;
+        };
+        this.getLamp = function () {
+            return this.electricLamp;
+        };
+        this.setLamp = function (electricLamp) {
+            this.electricLamp = electricLamp;
+        };
+        this.switchOn = function () {
+            if (!this.status){
+                this.status =true;
+            } else alert('Lamp already turn on');
+        };
+        this.switchOff = function () {
+            if (this.status){
+                this.status = false;
+            } else  alert('Lamp already turn off');
+        };
+    };
+    let ElectricLamp = function (SwitchButton) {
+        this.status = SwitchButton.getStatus();
+        this.getStatus = function () {
+            return this.status;
+        };
+        this.turnOn = function () {
+            SwitchButton.switchOn();
+        };
+        this.turnOff = function () {
+            SwitchButton.switchOff();
+        };
+        this.light =function () {
+            if(this.status){
+                alert('Lamp is lighting')
+            } else alert('Lamp is not lighting')
+        }
+    };
+    let switchButton = new SwitchButton();
+    let electricLamp = new ElectricLamp(switchButton);
+    for (let i=0; i<10;i++){
+        switchButton.switchOn();
+        switchButton.switchOff();
+    }
+    electricLamp.light();
+</script>
+</body>
+</html>
