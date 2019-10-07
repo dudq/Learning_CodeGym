@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam_Eva</title>
+</head>
+<body>
+<script>
+    let Apple = function () {
+        this.weight = 10;
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.decreaseWeight = function () {
+            if (!this.isEmpty()) {
+                this.weight = this.weight - 1;
+            } else alert('It empty');
+        };
+        this.isEmpty = function () {
+            if (this.weight === 0) {
+                return true;
+            } else {
+                return false
+            }
+        }
+    };
+    let Person = function (name, weight, gender) {
+        this.name = name;
+        this.weight = weight;
+        this.gender = gender;
+        this.greeting = function () {
+            document.write('Give me an apple');
+        };
+        this.getName = function () {
+            return this.name;
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.getGender = function () {
+            return this.gender;
+        };
+        this.isMale = function () {
+            if (this.gender === 'male') {
+                return true;
+            } else return false;
+        };
+        this.getWeightApple = function (apple) {
+            return  apple.getWeight();
+        };
+        // this.checkApple = function (apple) {
+        //     apple.isEmpty();
+        // };
+        this.eating = function (apple) {
+            apple.decreaseWeight();
+            if (!apple.isEmpty()) {
+                this.weight += 1;
+            }
+            alert(' Apple rest: ' + apple.getWeight() + 'g');
+        };
+    }
+    let apple = new Apple();
+    let adam = new Person('Adam', 60, 'male');
+    document.write(apple.getWeight());
+    document.write(adam.getName());
+    document.write(adam.getWeight());
+    document.write(adam.getGender());
+    adam.greeting();
+    let a = adam.getWeightApple(apple);
+    document.write(a);
+    for (let  i=0;i<11;i++) {
+        adam.eating(apple);
+        document.write('<br> apple: ' + adam.getWeightApple(apple) + ' adam: ' + adam.getWeight());
+    }
+</script>
+</body>
+</html>
