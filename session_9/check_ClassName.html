@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check_Class_Name</title>
+</head>
+<body>
+<script>
+    function checkClassName(str) {
+        regexp = /^[ACP]{1}[0-9]{4}[GHIKLM]{1}$/;
+        if (regexp.test(str)){
+            alert('It correct');
+        } else alert('It not correct');
+    }
+    let str = prompt('Enter class name');
+    checkClassName(str);
+</script>
+</body>
+</html>
