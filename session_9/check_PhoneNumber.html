@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Phone Number</title>
+</head>
+<body>
+<script>
+    function checkPhoneNumber(str){
+        regexp = /^\({1}[0-9]{2}(\)-\(0){1}[0-9]{1}\){1}$/;
+        if (regexp.test(str)){
+            alert('Correct');
+        } else alert('not Correct');
+    }
+    let str = prompt('enter number');
+    checkPhoneNumber(str);
+</script>
+</body>
+</html>
