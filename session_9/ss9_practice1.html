@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice</title>
+</head>
+<body>
+<script>
+    function checkDate(str) {
+        let regexp = /^(0?[1-9]|[12]\d|3[01])([\/\-.])(0?[1-9]|1[0-2])([\/\-.])(\d{2}|\d{4})$/;
+        if (regexp.test(str)){
+            alert(' Correct');
+        } else alert('not correct');
+    }
+    str = prompt(" enter date");
+    // let a = countCharacter(str);
+    // alert(a);
+    function isCharacter(str) {
+        let regexp = /^[a-zA-Z]$/;
+        if (regexp.test(str)){
+            return true;
+        } else return  false;
+    }
+    let vowel = 0;
+    let consonant = 0;
+    function isVowel(str) {
+        let regexp = /^[ueoai]$/
+        if (regexp.test(str)){
+            return true;
+        } else return false;
+    }
+    for (let i= 0 ; i<str.length;i++){
+        if (isCharacter(str[i])){
+            if (isVowel(str[i])){
+                vowel++;
+            } else consonant ++;
+        }
+    }
+    alert('Vovel :'+vowel+ '  '+' Consonant : '+ consonant);
+
+</script>
+</body>
+</html>
