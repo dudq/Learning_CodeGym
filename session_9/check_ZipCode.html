@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check_XipCode</title>
+</head>
+<body>
+<script>
+    function checkZipCodeUS(str) {
+        let regexp = /^[0-9]{5}(-[0-9]{4})?$/;
+        if (regexp.test(str)){
+            alert(" it is US zip code");
+        }else alert("it is not US zip code ")
+    }
+    let str = prompt("enter zip coe");
+    checkZipCodeUS(str);
+</script>
+</body>
+</html>
