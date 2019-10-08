@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 2</title>
+</head>
+<body>
+<script>
+    //Bai 1
+    /*let myDate = new Date(1992,6,20);
+    let now = new Date;
+    a = myDate.getFullYear();
+    alert(a);
+    b = now.getFullYear();
+    alert(b);
+    alert(' Toi da song: '+(now.getFullYear() - myDate.getFullYear())+' nam');
+    alert(' Toi da song: '+((now.getFullYear() - myDate.getFullYear())*12+(now.getMonth() - myDate.getMonth()))+' thang');
+    alert(' Toi da song: '+(now.getTime() - myDate.getTime())/1000/3600/24+' ngay');
+    alert(' Toi da song: '+(now.getTime() - myDate.getTime())/1000/3600+' gio');*/
+    //Bai 2
+    /*let random = Math.round(Math.random()*10);
+    alert(random);
+    let min = Math.min(1,3,5,-1);
+    alert(min);
+    let pow = Math.pow(5,3);
+    alert(pow);
+    function areaCircle(radius) {
+        return radius*radius*Math.PI;
+    }
+    alert(areaCircle(5));*/
+    //Bai 3
+    let str = 'Toi yeu ngon ngu lap trinh JavaScript';
+    /*let regexp = /a/g;
+    let result = str.match(regexp);
+    document.write(result);*/
+
+    /*let count =0;
+    for (let i=0; i<str.length;i++){
+        if (str[i] === 'a'){
+            count ++;
+        }
+    }
+    alert(count);*/
+    let arr = str.split(' ');
+    document.write(arr+'<br>');
+    alert(arr.length);
+    let str1 = str.replace(/Javascript/i,'Typescript');
+    document.write(str1);
+</script>
+</body>
+</html>
