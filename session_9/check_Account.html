@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check_Account</title>
+</head>
+<body>
+<script>
+    function checkAccount(str) {
+        regexp = /^[_a-zA-Z0-9]{6,}$/
+        if (regexp.test(str)){
+            alert(" it ok");
+        } else alert(" Not correct");
+    }
+    str = prompt("enter you account");
+    checkAccount(str);
+</script>
+</body>
+</html>
