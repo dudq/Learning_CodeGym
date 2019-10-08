@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check_Email</title>
+</head>
+<body>
+<script>
+    function checkEmail(str) {
+        regexp = /^([a-zA-Z0-9]+[a-zA-Z0-9])*@[a-zA-Z0-9]+\.[a-zA-Z0-9]$/
+        if (regexp.test(str)){
+            alert( 'It is a email');
+        } else alert('It is not a email');
+    }
+    let str = prompt('enter Email');
+    checkEmail(str);
+</script>
+</body>
+</html>
