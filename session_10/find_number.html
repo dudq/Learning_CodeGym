@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Find_Phone_Number</title>
+</head>
+<body>
+<script>
+    let regexp = /^09[6-8][0-9]{3}$/;
+    let array = ['096123','09724','098234','01234'];
+    function search(regexp,arr) {
+        let result = [];
+        for (let i=0;i<arr.length;i++){
+            if (regexp.test(arr[i])){
+                result.push(i);
+            }
+        }
+        return  result
+    }
+    let result = search(regexp,array);
+    document.write(result);
+</script>
+</body>
+</html>
