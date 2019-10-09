@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Algorithm_Min_Max</title>
+</head>
+<body>
+<script>
+    function dispArr(array) {
+        for (let i=0; i<array.length;i++){
+            document.write(array[i]+" ");
+            if (i%10==9){
+                document.write("<br>");
+            }
+        }
+    }
+    function findMin(array) {
+        let min = array[0];
+        for (let i=0;i<array.length;i++){
+            if (min>array[i]){
+                min = array[i];
+            }
+        }
+        return min;
+    }
+    function findMax(array) {
+        let max = array[0];
+        for (let i=0; i<array.length;i++){
+            if (max<array[i]){
+                max = array[i];
+            }
+        }
+        return max;
+    }
+    function randomArray(arr) {
+        for (let i=0;i<100;i++){
+            arr[i] = Math.round(Math.random()*100);
+        }
+        return arr;
+    }
+    let arr=[];
+    arr = randomArray(arr);
+    let minValue = findMin(arr);
+    let maxValue = findMax(arr);
+    dispArr(arr);
+    document.write("<br> Max Value is: " + maxValue);
+    document.write("<br> Min Value is: " + minValue);
+</script>
+</body>
+</html>
