@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Cat Mouse</title>
+</head>
+<body>
+<script>
+    let Cat = function (name,weight,speed) {
+        this.name =name;
+        this.weight = weight;
+        this.speed = speed;
+        this.getSpeed = function () {
+            return this.speed;
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.increaseWeight = function () {
+            return this.weight++;
+        };
+        this.say = function () {
+            alert('meo meo');
+        };
+        this.catchMouse = function (mouse) {
+            if (this.speed >mouse.getSpeed()){
+                return true;
+            }
+            return  false;
+        };
+        this.eatMouse = function (mouse) {
+            while (mouse.status && this.catchMouse(mouse)){
+              mouse.decreaseWeight();
+              this.increaseWeight();
+              alert(this.weight);
+          }
+          alert('Chuot da chet');
+        };
+    };
+    let Mouse = function (name,weight,speed) {
+        this.name =name;
+        this.weight = weight;
+        this.speed = speed;
+        this.status =true;
+        this.say = function () {
+            alert(' chit chit');
+        };
+        this.getSpeed = function () {
+            return this.speed;
+        };
+        this.decreaseWeight = function () {
+            this.weight--;
+            if (this.weight<10){
+                this.status =false;
+            }
+            return this.weight;
+
+        };
+    };
+    let tom = new Cat('Tom',50,10);
+    tom.say();
+    let jerry = new Mouse('Jerry',15,7);
+    jerry.say();
+    if (tom.catchMouse(jerry)){
+        alert('Bat duoc 1 con chuot');
+    };
+    tom.eatMouse(jerry);
+</script>
+</body>
+</html>
