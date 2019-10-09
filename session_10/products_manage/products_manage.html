@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products_Management</title>
+</head>
+<body>
+<h3> Add New Product</h3>
+<div class="container">
+    <form onsubmit="app.add()">
+        <input id="add_name" type="text" placeholder="New Product">
+        <input type="submit" value="add">
+    </form>
+</div>
+<h3>Display Products</h3>
+<table>
+    <tbody>
+    <tr>
+        <th>Product Name</th>
+        <th><p id="counter"></p></th>
+    </tr>
+    </tbody>
+    <tbody id="products">
+
+    </tbody>
+</table>
+<div id="spoiler" role="aria-hidden" style="display: none">
+    <div class="container">
+        <form id="saveEdit" action="products_manage.js">
+            <input id="edit_name" type="text" >
+            <input type="submit" value="Edit">
+            <a onclick="closeInput()" aria-label="Close"></a>
+        </form>
+    </div>
+</div>
+<script src="products_manage.js" ></script>
+</body>
+</html>
