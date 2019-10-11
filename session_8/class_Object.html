@@ -18,7 +18,7 @@
             document.getElementById('game').innerHTML = this.getObject();
         };
         this.getObject = function () {
-            if (this.xPosition < this.width) {
+            if (this.xPosition < 0) {
                 this.xPosition = window.innerWidth - this.width;
             }
             if (this.xPosition > window.innerWidth - this.width + 1) {

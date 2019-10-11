@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Tivi</title>
+</head>
+<body>
+<script>
+    let Tivi = function (chanel,volume) {
+        this.chanel = chanel;
+        this.volume = volume;
+        this.status =false;
+        this.turnOn = function () {
+            this.status = true;
+        };
+        this.turnOff = function () {
+            this.status = false;
+        };
+        this.setChanel = function (chanel) {
+            this.chanel = chanel;
+        };
+        this.getChanel = function () {
+            return this.chanel;
+        };
+        this.setVolume = function (volume) {
+            this.volume = volume;
+        }
+    };
+    let Remote = function () {
+        this.chanel = 1;
+        this.setVolume =20;
+        this.setChanel = function (chanel) {
+            this.chanel =chanel;
+        };
+        this.changeChanel= function (Tivi) {
+            Tivi.setChanel(this.chanel);
+        };
+        this.changVolume = function (Tivi) {
+            Tivi.setVolume(this.volume);
+        }
+        this.setVolume =function (Tivi) {
+            Tivi.setVolume(this.setVolume);
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Mouse(name, weight, speed) {
+        this.name = name;
+        this.weight = weight;
+        this.speed = speed;
+        this.status = true;
+        this.greeting = function () {
+            alert('chit chit');
+        };
+        this.getWeight = function () {
+            return this.weight;
+        };
+        this.setWeight = function (newWeight) {
+            this.weight = newWeight;
+        };
+        this.setDead = function () {
+            this.status = false;
+        };
+        this.getSpeed = function () {
+            return this.speed;
+        };
+        this.getName = function () {
+            return this.name;
+        };
+        this.getStatus = function () {
+            return this.status;
+        }
+
+    }
+
+    let mouseDuc = new Mouse('Duc', 52, 5);
+    let mouseChau = new Mouse('Chau', 75, 4);
+    let mouseHieu = new Mouse('Hieu', 62, 7);
+
+    function Cat(name, maxSpeed, weight) {
+        this.name = name;
+        this.maxSpeed = maxSpeed;
+        this.weight = weight;
+        this.greeting = function () {
+            alert(" ten cua meo la" + this.name);
+        };
+        this.catchMouse = function (mouse) {
+            if (this.maxSpeed > mouse.getSpeed()){
+                alert(this.name + ' bat duoc con chuot '+mouse.getName())
+            } else alert(this.name+ ' khong bat duoc ' + mouse.getName())
+        };
+        this.eatMouse = function (mouse) {
+            if (mouse.getStatus()){
+                this.weight += mouse.getWeight();
+                mouse.setDead();
+            }
+        }
+    }
+    let catBach = new Cat('Bach',6,80);
+</script>
+</body>
+</html>
