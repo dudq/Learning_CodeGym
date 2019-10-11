@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table style="border: #9eff54">
+<div id="cell-0-0" onclick="play(0,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-1" onclick="play(0,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-2" onclick="play(0,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-3" onclick="play(0,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-4" onclick="play(0,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-5" onclick="play(0,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-6" onclick="play(0,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-7" onclick="play(0,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-8" onclick="play(0,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-9" onclick="play(0,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-10" onclick="play(0,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-11" onclick="play(0,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-12" onclick="play(0,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-13" onclick="play(0,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-14" onclick="play(0,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-15" onclick="play(0,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-16" onclick="play(0,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-17" onclick="play(0,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-18" onclick="play(0,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 0px; line-height: 40px;"></div>
+<div id="cell-0-19" onclick="play(0,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 0px; line-height: 40px;"></div>
+<div id="cell-1-0" onclick="play(1,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-1" onclick="play(1,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-2" onclick="play(1,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-3" onclick="play(1,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-4" onclick="play(1,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-5" onclick="play(1,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-6" onclick="play(1,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-7" onclick="play(1,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-8" onclick="play(1,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-9" onclick="play(1,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-10" onclick="play(1,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-11" onclick="play(1,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-12" onclick="play(1,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-13" onclick="play(1,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-14" onclick="play(1,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-15" onclick="play(1,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-16" onclick="play(1,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-17" onclick="play(1,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-18" onclick="play(1,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 40px; line-height: 40px;"></div>
+<div id="cell-1-19" onclick="play(1,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 40px; line-height: 40px;"></div>
+<div id="cell-2-0" onclick="play(2,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-1" onclick="play(2,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-2" onclick="play(2,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-3" onclick="play(2,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-4" onclick="play(2,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-5" onclick="play(2,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-6" onclick="play(2,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-7" onclick="play(2,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-8" onclick="play(2,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-9" onclick="play(2,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-10" onclick="play(2,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-11" onclick="play(2,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-12" onclick="play(2,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-13" onclick="play(2,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-14" onclick="play(2,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-15" onclick="play(2,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-16" onclick="play(2,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-17" onclick="play(2,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-18" onclick="play(2,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 80px; line-height: 40px;"></div>
+<div id="cell-2-19" onclick="play(2,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 80px; line-height: 40px;"></div>
+<div id="cell-3-0" onclick="play(3,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-1" onclick="play(3,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-2" onclick="play(3,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-3" onclick="play(3,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-4" onclick="play(3,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-5" onclick="play(3,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-6" onclick="play(3,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-7" onclick="play(3,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-8" onclick="play(3,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-9" onclick="play(3,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-10" onclick="play(3,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-11" onclick="play(3,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-12" onclick="play(3,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-13" onclick="play(3,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-14" onclick="play(3,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-15" onclick="play(3,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-16" onclick="play(3,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-17" onclick="play(3,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-18" onclick="play(3,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 120px; line-height: 40px;"></div>
+<div id="cell-3-19" onclick="play(3,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 120px; line-height: 40px;"></div>
+<div id="cell-4-0" onclick="play(4,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-1" onclick="play(4,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-2" onclick="play(4,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-3" onclick="play(4,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-4" onclick="play(4,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-5" onclick="play(4,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-6" onclick="play(4,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-7" onclick="play(4,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-8" onclick="play(4,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-9" onclick="play(4,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-10" onclick="play(4,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-11" onclick="play(4,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-12" onclick="play(4,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-13" onclick="play(4,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-14" onclick="play(4,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-15" onclick="play(4,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-16" onclick="play(4,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-17" onclick="play(4,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-18" onclick="play(4,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 160px; line-height: 40px;"></div>
+<div id="cell-4-19" onclick="play(4,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 160px; line-height: 40px;"></div>
+<div id="cell-5-0" onclick="play(5,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-1" onclick="play(5,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-2" onclick="play(5,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-3" onclick="play(5,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-4" onclick="play(5,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-5" onclick="play(5,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-6" onclick="play(5,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-7" onclick="play(5,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-8" onclick="play(5,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-9" onclick="play(5,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-10" onclick="play(5,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-11" onclick="play(5,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-12" onclick="play(5,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-13" onclick="play(5,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-14" onclick="play(5,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-15" onclick="play(5,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-16" onclick="play(5,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-17" onclick="play(5,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-18" onclick="play(5,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 200px; line-height: 40px;"></div>
+<div id="cell-5-19" onclick="play(5,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 200px; line-height: 40px;"></div>
+<div id="cell-6-0" onclick="play(6,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-1" onclick="play(6,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-2" onclick="play(6,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-3" onclick="play(6,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-4" onclick="play(6,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-5" onclick="play(6,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-6" onclick="play(6,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-7" onclick="play(6,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-8" onclick="play(6,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-9" onclick="play(6,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-10" onclick="play(6,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-11" onclick="play(6,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-12" onclick="play(6,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-13" onclick="play(6,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-14" onclick="play(6,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-15" onclick="play(6,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-16" onclick="play(6,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-17" onclick="play(6,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-18" onclick="play(6,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 240px; line-height: 40px;"></div>
+<div id="cell-6-19" onclick="play(6,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 240px; line-height: 40px;"></div>
+<div id="cell-7-0" onclick="play(7,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-1" onclick="play(7,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-2" onclick="play(7,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-3" onclick="play(7,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-4" onclick="play(7,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-5" onclick="play(7,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-6" onclick="play(7,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-7" onclick="play(7,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-8" onclick="play(7,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-9" onclick="play(7,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-10" onclick="play(7,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-11" onclick="play(7,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-12" onclick="play(7,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-13" onclick="play(7,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-14" onclick="play(7,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-15" onclick="play(7,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-16" onclick="play(7,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-17" onclick="play(7,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-18" onclick="play(7,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 280px; line-height: 40px;"></div>
+<div id="cell-7-19" onclick="play(7,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 280px; line-height: 40px;"></div>
+<div id="cell-8-0" onclick="play(8,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-1" onclick="play(8,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-2" onclick="play(8,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-3" onclick="play(8,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-4" onclick="play(8,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-5" onclick="play(8,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-6" onclick="play(8,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-7" onclick="play(8,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-8" onclick="play(8,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-9" onclick="play(8,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-10" onclick="play(8,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-11" onclick="play(8,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-12" onclick="play(8,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-13" onclick="play(8,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-14" onclick="play(8,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-15" onclick="play(8,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-16" onclick="play(8,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-17" onclick="play(8,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-18" onclick="play(8,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 320px; line-height: 40px;"></div>
+<div id="cell-8-19" onclick="play(8,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 320px; line-height: 40px;"></div>
+<div id="cell-9-0" onclick="play(9,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-1" onclick="play(9,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-2" onclick="play(9,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-3" onclick="play(9,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-4" onclick="play(9,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-5" onclick="play(9,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-6" onclick="play(9,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-7" onclick="play(9,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-8" onclick="play(9,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-9" onclick="play(9,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-10" onclick="play(9,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-11" onclick="play(9,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-12" onclick="play(9,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-13" onclick="play(9,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-14" onclick="play(9,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-15" onclick="play(9,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-16" onclick="play(9,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-17" onclick="play(9,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-18" onclick="play(9,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 360px; line-height: 40px;"></div>
+<div id="cell-9-19" onclick="play(9,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 360px; line-height: 40px;"></div>
+<div id="cell-10-0" onclick="play(10,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-1" onclick="play(10,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-2" onclick="play(10,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-3" onclick="play(10,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-4" onclick="play(10,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-5" onclick="play(10,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-6" onclick="play(10,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-7" onclick="play(10,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-8" onclick="play(10,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-9" onclick="play(10,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-10" onclick="play(10,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-11" onclick="play(10,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-12" onclick="play(10,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-13" onclick="play(10,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-14" onclick="play(10,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-15" onclick="play(10,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-16" onclick="play(10,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-17" onclick="play(10,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-18" onclick="play(10,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 400px; line-height: 40px;"></div>
+<div id="cell-10-19" onclick="play(10,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 400px; line-height: 40px;"></div>
+<div id="cell-11-0" onclick="play(11,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-1" onclick="play(11,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-2" onclick="play(11,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-3" onclick="play(11,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-4" onclick="play(11,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-5" onclick="play(11,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-6" onclick="play(11,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-7" onclick="play(11,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-8" onclick="play(11,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-9" onclick="play(11,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-10" onclick="play(11,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-11" onclick="play(11,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-12" onclick="play(11,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-13" onclick="play(11,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-14" onclick="play(11,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-15" onclick="play(11,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-16" onclick="play(11,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-17" onclick="play(11,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-18" onclick="play(11,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 440px; line-height: 40px;"></div>
+<div id="cell-11-19" onclick="play(11,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 440px; line-height: 40px;"></div>
+<div id="cell-12-0" onclick="play(12,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-1" onclick="play(12,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-2" onclick="play(12,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-3" onclick="play(12,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-4" onclick="play(12,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-5" onclick="play(12,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-6" onclick="play(12,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-7" onclick="play(12,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-8" onclick="play(12,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-9" onclick="play(12,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-10" onclick="play(12,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-11" onclick="play(12,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-12" onclick="play(12,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-13" onclick="play(12,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-14" onclick="play(12,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-15" onclick="play(12,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-16" onclick="play(12,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-17" onclick="play(12,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-18" onclick="play(12,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 480px; line-height: 40px;"></div>
+<div id="cell-12-19" onclick="play(12,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 480px; line-height: 40px;"></div>
+<div id="cell-13-0" onclick="play(13,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-1" onclick="play(13,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-2" onclick="play(13,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-3" onclick="play(13,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-4" onclick="play(13,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-5" onclick="play(13,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-6" onclick="play(13,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-7" onclick="play(13,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-8" onclick="play(13,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-9" onclick="play(13,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-10" onclick="play(13,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-11" onclick="play(13,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-12" onclick="play(13,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-13" onclick="play(13,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-14" onclick="play(13,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-15" onclick="play(13,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-16" onclick="play(13,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-17" onclick="play(13,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-18" onclick="play(13,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 520px; line-height: 40px;"></div>
+<div id="cell-13-19" onclick="play(13,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 520px; line-height: 40px;"></div>
+<div id="cell-14-0" onclick="play(14,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-1" onclick="play(14,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-2" onclick="play(14,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-3" onclick="play(14,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-4" onclick="play(14,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-5" onclick="play(14,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-6" onclick="play(14,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-7" onclick="play(14,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-8" onclick="play(14,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-9" onclick="play(14,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-10" onclick="play(14,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-11" onclick="play(14,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-12" onclick="play(14,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-13" onclick="play(14,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-14" onclick="play(14,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-15" onclick="play(14,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-16" onclick="play(14,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-17" onclick="play(14,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-18" onclick="play(14,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 560px; line-height: 40px;"></div>
+<div id="cell-14-19" onclick="play(14,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 560px; line-height: 40px;"></div>
+<div id="cell-15-0" onclick="play(15,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-1" onclick="play(15,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-2" onclick="play(15,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-3" onclick="play(15,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-4" onclick="play(15,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-5" onclick="play(15,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-6" onclick="play(15,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-7" onclick="play(15,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-8" onclick="play(15,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-9" onclick="play(15,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-10" onclick="play(15,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-11" onclick="play(15,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-12" onclick="play(15,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-13" onclick="play(15,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-14" onclick="play(15,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-15" onclick="play(15,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-16" onclick="play(15,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-17" onclick="play(15,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-18" onclick="play(15,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 600px; line-height: 40px;"></div>
+<div id="cell-15-19" onclick="play(15,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 600px; line-height: 40px;"></div>
+<div id="cell-16-0" onclick="play(16,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-1" onclick="play(16,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-2" onclick="play(16,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-3" onclick="play(16,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-4" onclick="play(16,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-5" onclick="play(16,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-6" onclick="play(16,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-7" onclick="play(16,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-8" onclick="play(16,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-9" onclick="play(16,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-10" onclick="play(16,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-11" onclick="play(16,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-12" onclick="play(16,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-13" onclick="play(16,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-14" onclick="play(16,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-15" onclick="play(16,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-16" onclick="play(16,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-17" onclick="play(16,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-18" onclick="play(16,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 640px; line-height: 40px;"></div>
+<div id="cell-16-19" onclick="play(16,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 640px; line-height: 40px;"></div>
+<div id="cell-17-0" onclick="play(17,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-1" onclick="play(17,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-2" onclick="play(17,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-3" onclick="play(17,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-4" onclick="play(17,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-5" onclick="play(17,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-6" onclick="play(17,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-7" onclick="play(17,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-8" onclick="play(17,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-9" onclick="play(17,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-10" onclick="play(17,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-11" onclick="play(17,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-12" onclick="play(17,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-13" onclick="play(17,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-14" onclick="play(17,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-15" onclick="play(17,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-16" onclick="play(17,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-17" onclick="play(17,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-18" onclick="play(17,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 680px; line-height: 40px;"></div>
+<div id="cell-17-19" onclick="play(17,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 680px; line-height: 40px;"></div>
+<div id="cell-18-0" onclick="play(18,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-1" onclick="play(18,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-2" onclick="play(18,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-3" onclick="play(18,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-4" onclick="play(18,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-5" onclick="play(18,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-6" onclick="play(18,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-7" onclick="play(18,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-8" onclick="play(18,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-9" onclick="play(18,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-10" onclick="play(18,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-11" onclick="play(18,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-12" onclick="play(18,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-13" onclick="play(18,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-14" onclick="play(18,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-15" onclick="play(18,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-16" onclick="play(18,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-17" onclick="play(18,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-18" onclick="play(18,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 720px; line-height: 40px;"></div>
+<div id="cell-18-19" onclick="play(18,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 720px; line-height: 40px;"></div>
+<div id="cell-19-0" onclick="play(19,0)"
+     style="position: absolute; width: 40px; height: 40px;left: 0px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-1" onclick="play(19,1)"
+     style="position: absolute; width: 40px; height: 40px;left: 40px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-2" onclick="play(19,2)"
+     style="position: absolute; width: 40px; height: 40px;left: 80px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-3" onclick="play(19,3)"
+     style="position: absolute; width: 40px; height: 40px;left: 120px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-4" onclick="play(19,4)"
+     style="position: absolute; width: 40px; height: 40px;left: 160px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-5" onclick="play(19,5)"
+     style="position: absolute; width: 40px; height: 40px;left: 200px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-6" onclick="play(19,6)"
+     style="position: absolute; width: 40px; height: 40px;left: 240px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-7" onclick="play(19,7)"
+     style="position: absolute; width: 40px; height: 40px;left: 280px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-8" onclick="play(19,8)"
+     style="position: absolute; width: 40px; height: 40px;left: 320px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-9" onclick="play(19,9)"
+     style="position: absolute; width: 40px; height: 40px;left: 360px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-10" onclick="play(19,10)"
+     style="position: absolute; width: 40px; height: 40px;left: 400px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-11" onclick="play(19,11)"
+     style="position: absolute; width: 40px; height: 40px;left: 440px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-12" onclick="play(19,12)"
+     style="position: absolute; width: 40px; height: 40px;left: 480px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-13" onclick="play(19,13)"
+     style="position: absolute; width: 40px; height: 40px;left: 520px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-14" onclick="play(19,14)"
+     style="position: absolute; width: 40px; height: 40px;left: 560px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-15" onclick="play(19,15)"
+     style="position: absolute; width: 40px; height: 40px;left: 600px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-16" onclick="play(19,16)"
+     style="position: absolute; width: 40px; height: 40px;left: 640px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-17" onclick="play(19,17)"
+     style="position: absolute; width: 40px; height: 40px;left: 680px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-18" onclick="play(19,18)"
+     style="position: absolute; width: 40px; height: 40px;left: 720px; top: 760px; line-height: 40px;"></div>
+<div id="cell-19-19" onclick="play(19,19)"
+     style="position: absolute; width: 40px; height: 40px;left: 760px; top: 760px; line-height: 40px;"></div>
+</table>
+</body>
+</html>
